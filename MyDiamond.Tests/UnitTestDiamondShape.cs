@@ -75,7 +75,7 @@ namespace MyDiamond.Tests
         public void TestWhiteSpaceStringCreator()
         {   
             MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(7);
-            string expected = "    ";
+            string expected = "  ";
             string actual;
 
             actual = myDiamond.CreateWhiteSpaceString(2);
@@ -90,7 +90,7 @@ namespace MyDiamond.Tests
             string expected = "***";
             string actual;
 
-            actual = myDiamond.CreateDiamondsString(2);
+            actual = myDiamond.CreateDiamondsString(3);
 
             Assert.Equal(expected, actual);
         }

@@ -49,12 +49,23 @@ namespace MyDiamond
 
         public string CreateWhiteSpaceString(int amountOfWhiteSpaces)
         {
-            throw new NotImplementedException();
+            string diamondRow = "";
+            for(int i = 0; i < amountOfWhiteSpaces; i++)
+            {
+                diamondRow = diamondRow + " ";
+            }
+            return diamondRow;
         }
 
         public string CreateDiamondsString(int amountOfDiamonds)
         {
-            throw new NotImplementedException();
+            string diamonds = "";
+            
+            for(int j = 0; j < amountOfDiamonds; j++)
+            {
+                diamonds = diamonds + "*";
+            }
+            return diamonds;
         }
 
         public override string ToString()
