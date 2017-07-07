@@ -17,5 +17,22 @@ namespace MyDiamond.Tests
 
             Assert.Equal(expected, actual);
         }
+        
+        [Fact]
+        public void TestConstructorOnlyAcceptUneven()
+        {   
+            bool constructThrewExcept = false;
+            
+            try
+            {
+                MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(2);
+            }
+            catch (System.Exception)
+            {
+                constructThrewExcept = true;
+            }
+
+            Assert.True(constructThrewExcept);
+        }
     }
 }
