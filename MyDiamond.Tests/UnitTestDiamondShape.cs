@@ -17,7 +17,7 @@ namespace MyDiamond.Tests
 
             Assert.Equal(expected, actual);
         }
-        
+
         [Fact]
         public void TestConstructorOnlyAcceptUneven()
         {   
@@ -33,6 +33,18 @@ namespace MyDiamond.Tests
             }
 
             Assert.True(constructThrewExcept);
+        }
+
+        [Fact]
+        public void TestCreateRow()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(3);
+            string expected = " * ";
+            string actual;
+
+            actual = myDiamond.createRow(1);
+
+            Assert.Same(expected, actual);
         }
     }
 }
