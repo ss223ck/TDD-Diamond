@@ -42,8 +42,32 @@ namespace MyDiamond.Tests
             string expected = " * ";
             string actual;
 
-            actual = myDiamond.createRow(1);
-            
+            actual = myDiamond.CreateRow(1);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestCreateRowWithSizeSeven()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(7);
+            string expected = "   *   ";
+            string actual;
+
+            actual = myDiamond.CreateRow(1);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestCreateRowNumberThreeWithSizeSeven()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(7);
+            string expected = " ***** ";
+            string actual;
+
+            actual = myDiamond.CreateRow(3);
+
             Assert.Equal(expected, actual);
         }
     }
