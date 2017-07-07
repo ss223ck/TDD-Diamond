@@ -8,11 +8,15 @@ namespace MyDiamond
         private string[] _diamondRows;
 
         public int DiamondSize { get {return _diamondSize;} }
+        public string[] DiamondRows { get {return _diamondRows;} }
 
         public DiamondShape(int diamondSize)
         {
             if(diamondSize%2 != 0)
+            {
                 this._diamondSize = diamondSize;
+                this._diamondRows = new string[diamondSize];
+            }
             else
                 throw new Exception("The constructor can only take uneven numbers");
         }

@@ -94,5 +94,20 @@ namespace MyDiamond.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestCreateDiamondMethod()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(3);
+            string[] expected = {" * ","***"," * "};
+            string[] actual;
+
+            myDiamond.CreateDiamond();
+            actual = myDiamond.DiamondRows;
+
+
+            Assert.Equal(expected, actual);
+        }
+        
     }
 }
