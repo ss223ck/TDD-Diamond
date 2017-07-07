@@ -6,7 +6,9 @@ namespace MyDiamond
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DiamondShape myDiamond = new DiamondShape(5);
+
+            myDiamond.CreateRow(1);
         }
     }
 }

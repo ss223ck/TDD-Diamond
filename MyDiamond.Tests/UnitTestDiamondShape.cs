@@ -43,8 +43,8 @@ namespace MyDiamond.Tests
             string actual;
 
             actual = myDiamond.createRow(1);
-
-            Assert.Same(expected, actual);
+            
+            Assert.Equal(expected, actual);
         }
     }
 }
