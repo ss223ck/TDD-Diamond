@@ -70,5 +70,29 @@ namespace MyDiamond.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestWhiteSpaceStringCreator()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(7);
+            string expected = "    ";
+            string actual;
+
+            actual = myDiamond.CreateWhiteSpaceString(2);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestDiamondStringCreator()
+        {   
+            MyDiamond.DiamondShape myDiamond = new MyDiamond.DiamondShape(7);
+            string expected = "***";
+            string actual;
+
+            actual = myDiamond.CreateDiamondsString(2);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }

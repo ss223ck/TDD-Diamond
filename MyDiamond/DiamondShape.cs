@@ -47,6 +47,16 @@ namespace MyDiamond
             return diamondRow;
         }
 
+        public string CreateWhiteSpaceString(int amountOfWhiteSpaces)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string CreateDiamondsString(int amountOfDiamonds)
+        {
+            throw new NotImplementedException();
+        }
+
         public override string ToString()
         {
             throw new NotImplementedException();
