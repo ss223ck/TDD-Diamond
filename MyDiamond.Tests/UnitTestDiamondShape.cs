@@ -105,7 +105,6 @@ namespace MyDiamond.Tests
             myDiamond.CreateDiamond();
             actual = myDiamond.DiamondRows;
 
-
             Assert.Equal(expected, actual);
         }
         

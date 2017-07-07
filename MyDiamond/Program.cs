@@ -6,9 +6,9 @@ namespace MyDiamond
     {
         static void Main(string[] args)
         {
-            DiamondShape myDiamond = new DiamondShape(5);
+            DiamondShape myDiamond = new DiamondShape(9);
 
-            myDiamond.CreateRow(1);
+            myDiamond.CreateDiamond();
         }
     }
 }

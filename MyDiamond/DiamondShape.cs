@@ -21,9 +21,17 @@ namespace MyDiamond
                 throw new Exception("The constructor can only take uneven numbers");
         }
 
-        public string CreateDiamond()
+        public void CreateDiamond()
         {
-            throw new NotImplementedException();
+            int loopCount = (DiamondSize + 1) / 2;
+            string diamondRow = "";
+
+            for(int i = 1; i <= loopCount; i++)
+            {
+                diamondRow = CreateRow(i);
+                _diamondRows[i-1] = diamondRow;
+                _diamondRows[DiamondSize-i] = diamondRow;
+            }
         }
 
         public string CreateRow(int rowCount)
