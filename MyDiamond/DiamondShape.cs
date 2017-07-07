@@ -10,7 +10,7 @@ namespace MyDiamond
 
         public DiamondShape(int diamondSize)
         {
-            throw new NotImplementedException();
+            this._diamondSize = diamondSize;
         }
 
         public string createDiamond()
