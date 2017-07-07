@@ -32,15 +32,9 @@ namespace MyDiamond
             amountOfDiamonds = 1 + ((rowCount - 1) * 2);
             amountOfWhiteSpaces = DiamondSize - amountOfDiamonds;
             
-            for(int i = 0; i < amountOfWhiteSpaces; i++)
-            {
-                diamondRow = diamondRow + " ";
-            }
-
-            for(int j = 0; j < amountOfDiamonds; j++)
-            {
-                diamonds = diamonds + "*";
-            }
+            diamondRow = CreateWhiteSpaceString(amountOfWhiteSpaces);
+            
+            diamonds = CreateDiamondsString(amountOfDiamonds);
 
             diamondRow = diamondRow.Insert(amountOfWhiteSpaces/2, diamonds);
 
@@ -60,7 +54,7 @@ namespace MyDiamond
         public string CreateDiamondsString(int amountOfDiamonds)
         {
             string diamonds = "";
-            
+
             for(int j = 0; j < amountOfDiamonds; j++)
             {
                 diamonds = diamonds + "*";
