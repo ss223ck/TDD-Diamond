@@ -10,7 +10,10 @@ namespace MyDiamond
 
         public DiamondShape(int diamondSize)
         {
-            this._diamondSize = diamondSize;
+            if(diamondSize%2 != 0)
+                this._diamondSize = diamondSize;
+            else
+                throw new Exception("The constructor can only take uneven numbers");
         }
 
         public string createDiamond()
