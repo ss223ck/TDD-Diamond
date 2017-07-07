@@ -76,7 +76,14 @@ namespace MyDiamond
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            string consoleFormat = "";
+
+            foreach(string s in DiamondRows)
+            {
+                consoleFormat = consoleFormat + "\n " + s;
+            }
+
+            return consoleFormat;
         }
     
     }

@@ -9,6 +9,8 @@ namespace MyDiamond
             DiamondShape myDiamond = new DiamondShape(9);
 
             myDiamond.CreateDiamond();
+
+            Console.Write(myDiamond.ToString());
         }
     }
 }
